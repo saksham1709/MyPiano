@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>piano</title>
+</head>
+
+<body>
+    <div class="keys">
+      <h1>piano</h1>
+    <div data-key="65" class="key key1">
+      <button onclick="myfunction(this)" class="btn"><kbd>A</kbd></button>
+    </div>
+    <div data-key="83" class="key key2">
+      <button onclick="myfunction(this)" class="btn"><kbd>S</kbd></button>
+      <div data-key="69" class="sub"><button onclick="myfunction(this)" class="b"><kbd>E</kbd></button></div>
+    </div>
+    <div data-key="68" class="key key3">
+      <button onclick="myfunction(this)" class="btn"><kbd>D</kbd></button>
+    </div>
+    <div data-key="70" class="key key4">
+      <button onclick="myfunction(this)" class="btn"><kbd>F</kbd></button>
+      <div  data-key="82"  class="sub"><button onclick="myfunction(this)" class="b"><kbd>R</kbd></button></div>
+    </div>
+    <div data-key="71" class="key key5">
+      <button onclick="myfunction(this)" class="btn"><kbd>G</kbd></button>
+    </div>
+    <div data-key="72" class="key key6">
+      <button onclick="myfunction(this)" class="btn"><kbd>H</kbd></button>
+      <div  data-key="84" class="sub"><button onclick="myfunction(this)" class="b"><kbd>T</kbd></button></div>
+    </div>
+    <div data-key="74" class="key  key7">
+      <button onclick="myfunction(this)" class="btn"><kbd>J</kbd></button>
+    </div>
+    <div data-key="75" class="key8 key ">
+      <button onclick="myfunction(this)" class="btn"><kbd>K</kbd></button>
+      <div  data-key="89" class="sub"><button onclick="myfunction(this)" class="b"><kbd>Y</kbd></button></div>
+    </div>
+    <div data-key="76" class="key  key9">
+      <button onclick="myfunction(this)" class="btn"><kbd>L</kbd></button>
+    </div>
+    <div data-key="90" class="key10 key ">
+      <button onclick="myfunction(this)" class="btn"><kbd>Z</kbd></button>
+      <div data-key="85"  class="sub"><button onclick="myfunction(this)" class="b"><kbd>U</kbd></button></div>
+    </div>
+    <div data-key="88" class="key  key11">
+      <button onclick="myfunction(this)" class="btn"><kbd>X</kbd></button>
+    </div>
+    <div data-key="67" class="key12 key ">
+      <button onclick="myfunction(this)" class="btn"><kbd>C</kbd></button>
+      <div  data-key="73" class="sub"><button onclick="myfunction(this)" class="b"><kbd>I</kbd></button></div>
+    </div>
+    <div data-key="86" class="key  key13">
+      <button onclick="myfunction(this)" class="btn"><kbd>V</kbd></button>
+    </div>
+    <div data-key="66" class="key14 key ">
+      <button onclick="myfunction(this)" class="btn"><kbd>B</kbd></button>
+      <div data-key="79"  class="sub"><button onclick="myfunction(this)" class="b"><kbd>O</kbd></button></div>
+    </div>
+    <div data-key="78" class="key  key15">
+      <button onclick="myfunction(this)" class="btn"><kbd>N</kbd></button>
+    </div>
+    <div data-key="77" class="key  key16">
+      <button onclick="myfunction(this)" class="btn"><kbd>M</kbd></button>
+      <div data-key="80"  class="sub"><button onclick="myfunction(this)" class="b"><kbd>P</kbd></button></div>
+    </div>
+    <div data-key="81" class="key  key17">
+      <button onclick="myfunction(this)" class="btn"><kbd>Q</kbd></button>
+    </div>
+    <div data-key="87" class="key  key18">
+      <button onclick="myfunction(this)" class="btn"><kbd>W</kbd></button>
+      <div data-key="32"  class="sub"><button onclick="myfunction(this)" class="b"><kbd>b</kbd></button></div>
+    </div>
+  </div>
+  <audio data-key="65" src="sounds/piano_A (mp3cut.net).mp3"></audio>
+  <audio data-key="83" src="sounds/piano_A_sharp (mp3cut.net).mp3"></audio>
+  <audio data-key="68" src="sounds/piano_C_sharp (mp3cut.net).mp3"></audio>
+  <audio data-key="70" src="sounds/piano_D (mp3cut.net).mp3"></audio>
+  <audio data-key="71" src="sounds/piano_D_sharp (mp3cut.net).mp3"></audio>
+  <audio data-key="72" src="sounds/piano_E (mp3cut.net).mp3"></audio>
+  <audio data-key="74" src="sounds/piano_F (mp3cut.net).mp3"></audio>
+  <audio data-key="75" src="sounds/piano_F_sharp (mp3cut.net).mp3"></audio>
+  <audio data-key="76" src="sounds/piano_fifth_A_E (mp3cut.net).mp3"></audio>
+  <audio data-key="90" src="sounds/piano_fourth_A_D (mp3cut.net).mp3"></audio>
+  <audio data-key="88" src="sounds/piano_G (mp3cut.net).mp3"></audio>
+  <audio data-key="67" src="sounds/piano_G_sharp (mp3cut.net).mp3"></audio>
+  <audio data-key="86" src="sounds/piano_Major_Sixth_A_F_sharp (mp3cut.net).mp3"></audio>
+  <audio data-key="66" src="sounds/piano_Major_Third_A_C_sharp (mp3cut.net).mp3"></audio>
+  <audio data-key="78" src="sounds/piano_middle_C (mp3cut.net).mp3"></audio>
+  <audio data-key="77" src="sounds/piano_octave_A_A (mp3cut.net).mp3"></audio>
+  <audio data-key="81" src="sounds/piano_twelfth_A_E (mp3cut.net).mp3"></audio>
+  <audio data-key="87" src="sounds/piano-c_C_major.wav"></audio>
+  <audio data-key="69" src="sounds/piano-d_D_major.wav"></audio>
+  <audio data-key="82" src="sounds/piano-e_E_major.wav"></audio>
+  <audio data-key="84" src="sounds/piano-f_F_major.wav"></audio>
+  <audio data-key="89" src="sounds/piano-g_G_major.wav"></audio>
+  <audio data-key="85" src="sounds/F4.mp3"></audio>
+  <audio data-key="73" src="sounds/F5.mp3"></audio>
+  <audio data-key="79" src="sounds/Gb4.mp3"></audio>
+  <audio data-key="80" src="sounds/Gb5.mp3"></audio>
+  <audio data-key="32" src="sounds/Gb6.mp3"></audio>
+
+  <script>
+    const keys = Array.from(document.querySelectorAll('.key'));
+     keys.forEach(key => key.addEventListener('transitionend',stop));
+
+    const bkeys = Array.from(document.querySelectorAll('.sub'));
+    bkeys.forEach(key => key.addEventListener('transitionend', moveBy))
+
+    function myfunction(d) {
+      var x = d.parentNode.getAttribute("data-key");
+      const audio = document.querySelector(`audio[data-key="${x}"]`);
+     
+      if(x==69 || x==82 || x==84 || x==89 || x==85 || x==73 || x==79 || x== 80 || x== 32){
+        const bkey = document.querySelector(`div[data-key="${x}"]`);
+        bkey.classList.add('playing-black')
+      } 
+      else{
+        const key = document.querySelector(`div[data-key="${x}"]`);
+        key.classList.add('playing');
+      }
+      audio.currentTime = 0;
+      audio.play();
+    }
+    function stop(e){
+      this.classList.remove('playing');
+    }
+
+    function moveBy(e){
+      this.classList.remove('playing-black')
+    } 
+
+    window.addEventListener('keydown', function(e){
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      audio.currentTime = 0;
+      audio.play();
+
+     if(e.keyCode==69 || e.keyCode==82 || e.keyCode==84 || e.keyCode==89 || e.keyCode==85 || e.keyCode==73 || e.keyCode==79 || e.keyCode==80 || e.keyCode==32){
+       const bkey = document.querySelector(`div[data-key="${e.keyCode}"]`);
+       bkey.classList.add('playing-black')
+     }
+     else{
+       const key = document.querySelector(`div[data-key="${e.keyCode}"]`)
+       key.classList.add('playing');
+     }
+    });
+  </script>
+</body>
+
+</html>

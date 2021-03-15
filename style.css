@@ -1,0 +1,69 @@
+body{
+    background:url('piano.png');
+    background-size: cover;
+  }
+  .keys{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    top: 26.3%;
+    right: 2px;
+  }
+  .key{
+    display: flex;
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    width: 56px;
+    height: 9.2vw;
+    transition: all 0.09s;
+  }
+  .sub{
+    display: flex;
+    background-color: black;
+    border: 1px solid black;
+    width: 20px;
+    position: relative;
+    height: 6vw;
+    right: 19%;
+    transition: all 0.09s;
+  }
+.btn{
+  font-size: 25px;
+  border: none;
+  background: none;
+  color: black;
+  width: 55px;
+  font-weight: bolder;
+  position: absolute;
+  top: 54.6%;
+  outline: none;
+}
+.b{
+  outline: none;
+    font-size: 18px;
+    border: none;
+    background: none;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 70%;
+    width: 20px;
+}
+.playing{
+  height: 9vw;
+  background-color: rgb(241, 233, 233);
+}
+.playing-black{
+  height: 5.5vw;
+  background-color: rgb(20, 19, 19);
+}
+.keys h1{
+  position: absolute;
+  font-size: 8rem;
+  color: #d7f1a6;
+  bottom: 42vw;
+}
