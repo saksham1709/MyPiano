@@ -41,6 +41,7 @@ body{
   position: absolute;
   top: 54.6%;
   outline: none;
+  cursor: pointer;
 }
 .b{
   outline: none;
@@ -52,6 +53,7 @@ body{
     position: absolute;
     top: 70%;
     width: 20px;
+    cursor: pointer;
 }
 .playing{
   height: 9vw;
